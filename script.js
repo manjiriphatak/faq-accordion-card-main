@@ -1,7 +1,10 @@
-const showHideAnswer = document.querySelectorAll(".item");
+const accordion = document.querySelectorAll(".item");
 
-showHideAnswer.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle(".active");
+accordion.forEach((item) => {
+  item.addEventListener("click", () => {
+    let getattri = item.getAttribute("aria-expanded");
+    getattri == "false"
+      ? item.setAttribute("aria-expanded", "true")
+      : item.setAttribute("aria-expanded", "false");
   });
 });
