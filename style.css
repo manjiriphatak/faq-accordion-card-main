@@ -32,33 +32,28 @@ main {
   margin: 9rem 1.5rem;
   background-color: rgb(255, 255, 255);
 }
-.box {
-  height: 300px;
-  width: 6rem;
-  position: fixed;
-  top: 6.3rem;
-  left: 3.8rem;
-  background-image: url("./images/illustration-box-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.womanOnScreen {
-  height: 300px;
-  width: 63%;
-  position: fixed;
-  top: 2.2rem;
-  right: 4.5rem;
-  background-image: url("./images/illustration-woman-online-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .baseImg {
-  height: 300px;
-  width: 63%;
+  height: 100px;
+  width: 63vw;
   position: fixed;
-  top: 1rem;
-  right: 4.5rem;
-  background-image: url("./images/bg-pattern-desktop.svg");
+  top: 22vh;
+  right: 19vw;
+  /* top: 1rem;
+  right: 4.5rem; */
+  background-image: url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.womanOnScreen {
+  height: 200px;
+  width: 63vw;
+  position: fixed;
+  top: 5.5vh;
+  right: 19vw;
+  /* top: 2.2rem;
+  right: 4.5rem; */
+  background-image: url("./images/illustration-woman-online-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -89,12 +84,13 @@ header {
 .question {
   color: var(--inactive-heading-color);
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: left;
 }
 .answer p {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
   color: var(--active-answer-color);
   margin-bottom: 1rem;
 }
