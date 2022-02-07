@@ -61,8 +61,8 @@ main {
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 16rem;
-  transform: translate(0, 23%);
+  background-size: 15rem;
+  transform: translate(0, 40%);
 }
 
 .content {
@@ -173,7 +173,7 @@ header {
     background-image: url("images/illustration-woman-online-desktop.svg");
     background-repeat: no-repeat;
     background-position: center left;
-    background-size: 100%;
+    background-size: contain;
   }
   #bgImage::before {
     content: "";
@@ -186,10 +186,11 @@ header {
   }
   .bg-patterns::after {
     position: absolute;
+    width: 50%;
     background-image: url("images/illustration-box-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 15rem;
-    background-position: left top 30%;
-    margin-left: 3rem;
+    background-position: left -5% top 5%;
+    background-size: contain;
+    /* margin-left: 3rem; */
   }
 }
