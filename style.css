@@ -86,7 +86,7 @@ header {
   align-items: center;
   margin-bottom: 1rem;
 }
-.questionContent:hover {
+.question:hover {
   color: var(--hover-text-color);
 }
 .question {
