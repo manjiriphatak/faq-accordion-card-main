@@ -133,24 +133,64 @@ header {
 
 @media (min-width: 767px) {
   main {
-    max-width: 70rem;
     width: 90%;
-    overflow: hidden;
-    padding: 0;
+    max-width: 70rem;
     align-self: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex: 1;
-    /* background-image: url("./images/bg-pattern-desktop.svg");
-    background-position: bottom 40% right 37vw;
-    background-repeat: no-repeat;
-    background-size: 120%; */
+    flex-direction: row;
+    justify-content: space-between;
   }
+
+  /* image styling section */
+
+  .mobile-image-wrapper {
+    display: none;
+  }
+  .desktop-image-wrapper {
+    display: block;
+    position: relative;
+    width: 60rem;
+  }
+  .image-box {
+    /* width: 50%; */
+    position: absolute;
+    left: -5rem;
+    top: 59%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .desktop-woman-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+  }
+  .desktop-woman-image-wrapper::before {
+    content: "";
+    display: block;
+    width: 75rem;
+    height: 75rem;
+    position: absolute;
+    top: -70%;
+    right: 0;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .desktop-woman-image-wrapper img {
+    position: absolute;
+    width: 110%;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+  }
+
+  /* faq section */
   .heading {
     text-align: left;
     font-size: 2.7rem;
-    margin-bottom: 3rem;
   }
   .question,
   .answer p {
@@ -161,8 +201,7 @@ header {
     margin-top: 2rem;
     align-self: center;
     float: right;
-
-    margin: 0rem 6rem;
+    margin: 4rem;
   }
 
   .questionContent {
@@ -170,35 +209,16 @@ header {
     align-items: center;
     margin-bottom: 1rem;
   }
+}
 
-  /* #bgImage {
-    position: relative;
-    top: 0%;
-    left: 15%;
-    width: 100rem;
-    height: 80vh;
-    justify-self: center;
-    align-self: center;
-    background-image: url("images/illustration-woman-online-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: contain;
+@media (max-width: 300px) {
+  .woman-img-mobile {
+    top: -6rem;
   }
-  #bgImage::before {
-    content: "";
-    inset: 0;
-    position: absolute;
-    background-image: url("./images/bg-pattern-desktop.svg");
-    background-position: bottom 40% left 100%;
-    background-repeat: no-repeat;
-    background-size: 250%;
+  .content {
+    padding: 0rem 1rem;
   }
-  .bg-patterns::after {
-    position: absolute;
-    width: 50%;
-    background-image: url("images/illustration-box-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: left -5% top 5%;
-    background-size: contain;
-  } */
+  main {
+    margin: 9rem 1.5rem;
+  }
 }
